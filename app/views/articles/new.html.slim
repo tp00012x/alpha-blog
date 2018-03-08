@@ -5,21 +5,5 @@ html
     h1 Create an article
 
     h2 The following errors prevented the article from getting created
-    - if @article.errors.any?
-      ul
-      - @article.errors.full_messages.each do |msg|
-        li #{msg}
 
-    = form_for @article do |f|
-      p
-        = f.label :title
-        br
-        = f.text_field :title
-      p
-        = f.label :description
-        br
-        = f.text_area :description
-      p
-        = f.submit
-
-p = link_to 'Index Page', articles_path
+    = render 'form'
