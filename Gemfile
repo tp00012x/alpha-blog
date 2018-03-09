@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'slim'
 gem 'jquery-rails'
+gem 'bootstrap-sass', '~> 3.3.7'
 gem 'bootstrap', '~> 4.0.0'
 
 group :development, :test do
