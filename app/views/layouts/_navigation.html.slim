@@ -6,7 +6,7 @@ nav.navbar.navbar-default
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      = link_to 'Alpha blog', root_path, class: 'navbar-brand', id: 'logo'
+      = link_to 'Sexy blog', root_path, class: 'navbar-brand', id: 'logo'
 
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
       ul.nav.navbar-nav
@@ -14,10 +14,9 @@ nav.navbar.navbar-default
         li
           a href="#" Link
         li.dropdown
-          a.dropdown-toggle href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" Dropdown
+          a.dropdown-toggle href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" Actions
           ul.dropdown-menu
-            li
-              a href="#" Action
+            li = link_to 'New Article', new_article_path
             li
               a href="#" Another action
             li

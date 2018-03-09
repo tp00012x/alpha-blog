@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title AlphaBlog
+    title SexyBlog
     = csrf_meta_tags
 
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -10,4 +10,6 @@ html
   body
     = render 'layouts/navigation'
     = render 'layouts/messages'
-    = yield
+    .container
+      = yield
+    = render 'layouts/footer'
