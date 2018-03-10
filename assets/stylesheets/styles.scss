@@ -4,6 +4,10 @@ $navbar-default-bg: black;
   background-color: $navbar-default-bg;
 }
 
+a {
+  color: #eee;
+}
+
 #logo {
   float: left;
   font-size: 1.7em;
@@ -37,6 +41,15 @@ $navbar-default-bg: black;
 .btn-xlarge {
   font-size: 1.7em ;
   background-color: black;
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
 }
 
 footer {

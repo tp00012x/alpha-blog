@@ -1,6 +1,9 @@
 .navbar-default {
   background-color: black; }
 
+a {
+  color: #eee; }
+
 #logo {
   float: left;
   font-size: 1.7em;
@@ -28,6 +31,13 @@
 .btn-xlarge {
   font-size: 1.7em;
   background-color: black; }
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px; }
+
+.description {
+  margin-top: 0; }
 
 footer {
   margin-top: 45px;
