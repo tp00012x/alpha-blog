@@ -6,7 +6,7 @@ h1 align='center' Why are you sexy?
         .article-title
           = link_to article.title, article_path(article)
         .article-body
-          = truncate(article.description, lenght: 300)
+          = article.description
         .article-actions
           .btn.btn-xs.btn-primary = link_to 'Edit this Article', edit_article_path(article)
           .btn.btn-xs.btn-danger = link_to 'Delete this Article', article_path(article), method: :delete, data: {confirm: 'Are you sure you want to delete the article?'}
