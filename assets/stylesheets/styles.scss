@@ -4,10 +4,6 @@ $navbar-default-bg: black;
   background-color: $navbar-default-bg;
 }
 
-a {
-  color: #eee;
-}
-
 #logo {
   float: left;
   font-size: 1.7em;
@@ -52,6 +48,16 @@ a {
   margin-top: 0;
 }
 
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding: 15px 0;
+}
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -73,5 +79,11 @@ footer {
   ul li {
     float: left;
     margin-left: 15px;
+  }
+}
+
+.btn{
+  a {
+    color: #eee;
   }
 }
