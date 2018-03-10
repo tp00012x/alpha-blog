@@ -1,0 +1,27 @@
+h1 align='center' Signup for Sexy Blog
+
+= render 'shared/errors', obj: @user
+
+.row
+  .col-xs-12
+    = form_for(@user, :html => {class: 'form-horizontal', role: 'form'}) do |f|
+      .form-group
+        .control-label.col-sm-2
+          = f.label :username
+        .col-sm-8
+          = f.text_field :username, placeholder: 'Enter Username', class: 'form-control', autofocus: true
+      .form-group
+        .control-label.col-sm-2
+          = f.label :email
+        .col-sm-8
+          = f.email_field :email, class: 'form-control', placeholder: 'Enter Email', rows: 10
+      .form-group
+        .control-label.col-sm-2
+          = f.label :password
+        .col-sm-8
+          = f.password_field :password, class: 'form-control', placeholder: 'Enter Password', rows: 10
+      .form-group
+        .col-sm-10.col-sm-offset-2
+          = f.submit 'Sign up', class: 'btn btn-primary btn-lg'
+    .col-xs-4.col-xs-offset-4
+      = link_to 'Cancel request and return to articles listing', articles_path
